@@ -1,0 +1,158 @@
+:root {
+    --vino: #6D1615;
+    --rosa: #D0B9BA;
+    --petroleo: #096266;
+    --gris-azulado: #739899;
+    --fondo: #f7f3f1;
+    --blanco: #ffffff;
+    --texto: #263238;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+}
+
+.topbar {
+    background: var(--vino);
+    color: var(--blanco);
+    padding: 18px 28px;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.titulo {
+    color: var(--vino);
+    font-weight: 600;
+}
+
+.card {
+    border: 1px solid var(--rosa);
+    border-radius: 8px;
+}
+
+.tabla {
+    width: 100%;
+    background: var(--blanco);
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rosa);
+    text-align: left;
+}
+
+.tabla th {
+    background: var(--petroleo);
+    color: var(--blanco);
+    font-weight: 600;
+}
+
+.tabla tbody tr:hover {
+    background: #f3e8e8;
+}
+
+.btn {
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background: var(--petroleo);
+    border-color: var(--petroleo);
+    color: var(--blanco);
+}
+
+.btn-primary:hover {
+    background: #074d50;
+    border-color: #074d50;
+    color: var(--blanco);
+}
+
+.btn-warning {
+    background: var(--gris-azulado);
+    border-color: var(--gris-azulado);
+    color: var(--blanco);
+}
+
+.btn-warning:hover {
+    background: #607f80;
+    border-color: #607f80;
+    color: var(--blanco);
+}
+
+.btn-danger {
+    background: var(--vino);
+    border-color: var(--vino);
+    color: var(--blanco);
+}
+
+.btn-danger:hover {
+    background: #541110;
+    border-color: #541110;
+    color: var(--blanco);
+}
+
+.btn-outline-secondary {
+    border-color: var(--gris-azulado);
+    color: var(--petroleo);
+}
+
+.btn-outline-secondary:hover {
+    background: var(--gris-azulado);
+    border-color: var(--gris-azulado);
+    color: var(--blanco);
+}
+
+.formulario-contenedor {
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--petroleo);
+    box-shadow: 0 0 0 0.2rem rgba(9, 98, 102, 0.15);
+}
+
+.badge-activo {
+    background: var(--gris-azulado);
+    color: var(--blanco);
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.acciones form {
+    margin: 0;
+}
+
+.flash {
+    background: var(--rosa);
+    color: var(--vino);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.flash p {
+    margin: 0;
+}
